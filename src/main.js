@@ -4,54 +4,24 @@ const app = document.querySelector("#app");
 
 app.innerHTML = `
   <div class="site-shell">
+    <div class="topbar"><div class="topbar-inner"><span>ROB REIDER · PROFESSIONAL VOICE ACTOR</span><span class="topbar-right">POLITICAL · NARRATION · COMMERCIAL · STORYTELLING</span></div></div>
     <header class="nav">
-      <a class="brand" href="#top" aria-label="Rob Reider Political Voiceover home">
-        <span class="brand-mark">RR</span>
-        <span class="brand-name">ROB REIDER VOICE</span>
-      </a>
-
-      <nav class="nav-links" aria-label="Primary navigation">
-        <a href="#demo">Demo</a>
-        <a href="#voice">The Voice</a>
-        <a href="#applications">Applications</a><a href="#studio">Studio</a>
-      </nav>
-
-      <a class="nav-cta" href="#contact">Contact Rob <span>↗</span></a>
+      <a class="brand" href="#top" aria-label="Rob Reider Political Voiceover home"><span class="brand-seal">RR</span><span class="brand-name">ROB REIDER<small>POLITICAL VOICEOVER</small></span></a>
+      <nav class="nav-links" aria-label="Primary navigation"><a class="active" href="#top">Home</a><a href="#demo">Demo</a><a href="#voice">The Voice</a><a href="#applications">Applications</a><a href="#studio">Studio</a><a href="#contact">Contact</a></nav>
+      <a class="nav-cta" href="#contact">REQUEST A QUOTE <span>↗</span></a>
     </header>
 
     <main id="top">
       <section class="hero section">
+        <div class="hero-glow" aria-hidden="true"></div><div class="hero-stars" aria-hidden="true">★ &nbsp; ★ &nbsp; ★</div>
         <div class="hero-copy">
-          <p class="eyebrow"><span></span>CONSERVATIVE POLITICAL VOICEOVER</p>
+          <div class="hero-kicker"><span></span> PROFESSIONAL POLITICAL VOICEOVER <span></span></div>
           <h1>A voice of<br /><em>experience.</em></h1>
-          <p class="hero-sub">
-            Mature. Lived-in. Wise. Authoritative.<br />
-            A professional voice for conservative political media.
-          </p>
-
-          <div class="hero-actions">
-            <a class="button button-dark" href="#demo">Listen to the Demo <span>▶</span></a>
-            <a class="text-link" href="#contact">Contact Rob <span>→</span></a>
-          </div>
-
-          <div class="hero-tags" aria-label="Voice qualities">
-            <span>MATURE</span>
-            <span>LIVED-IN</span>
-            <span>AUTHORITATIVE</span>
-            <span>STORYTELLER</span>
-          </div>
+          <p class="hero-sub">Mature. Lived-in. Wise. Authoritative.<strong>A professional voice for conservative political media.</strong></p>
+          <div class="hero-actions"><a class="button button-red" href="#demo">LISTEN TO THE DEMO <span>▶</span></a><a class="button button-outline" href="#contact">REQUEST A QUOTE <span>→</span></a></div>
+          <div class="hero-tags" aria-label="Voice qualities"><span>MATURE</span><span>LIVED-IN</span><span>AUTHORITATIVE</span><span>STORYTELLER</span></div>
         </div>
-
-        <div class="hero-portrait">
-          <div class="portrait-frame">
-            <img src="/images/rob-reider-headshot.jpg" alt="Rob Reider" />
-            <div class="portrait-caption">
-              <span>ROB REIDER</span>
-              <span>VOICE ACTOR</span>
-            </div>
-          </div>
-          <div class="portrait-accent" aria-hidden="true"></div>
-        </div>
+        <div class="hero-portrait"><div class="portrait-glow" aria-hidden="true"></div><img class="hero-cutout" src="/images/rob-reider-transparent-bg.png" alt="Rob Reider, professional voice actor" /><div class="hero-nameplate"><strong>ROB REIDER</strong><span>VOICE ACTOR</span></div><div class="hero-rule" aria-hidden="true"></div></div>
       </section>
 
       <section class="demo-band" id="demo">
@@ -206,13 +176,13 @@ app.innerHTML = `
           <p class="eyebrow"><span></span> HAVE A SCRIPT?</p>
           <h2>Let's get your<br /><em>message heard.</em></h2>
           <p class="contact-copy">
-            Send the script, project details and deadline. I will respond
+            Send the script, project details and deadline. Rob will respond
             with availability and a quote.
           </p>
 
           <div class="contact-actions">
             <a class="button button-light" href="mailto:rob@robreidervoice.com?subject=Political%20Voiceover%20Inquiry">
-              Contact Rob <span>↗</span>
+              Request a Quote <span>↗</span>
             </a>
             <a class="contact-email" href="mailto:rob@robreidervoice.com">
               rob@robreidervoice.com
@@ -223,7 +193,7 @@ app.innerHTML = `
     </main>
 
     <footer>
-      <span>© ${new Date().getFullYear()} ROB REIDER VOICE</span>
+      <span>© ${new Date().getFullYear()} ROB REIDER</span>
       <span>POLITICAL VOICEOVER</span>
     </footer>
   </div>
