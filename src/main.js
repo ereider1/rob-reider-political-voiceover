@@ -7,23 +7,22 @@ app.innerHTML = `
     <header class="nav">
       <a class="brand" href="#top" aria-label="Rob Reider Political Voiceover home">
         <span class="brand-mark">RR</span>
-        <span class="brand-name">ROB REIDER</span>
+        <span class="brand-name">ROB REIDER VOICE</span>
       </a>
 
       <nav class="nav-links" aria-label="Primary navigation">
         <a href="#demo">Demo</a>
         <a href="#voice">The Voice</a>
         <a href="#applications">Applications</a><a href="#studio">Studio</a>
-        <a href="#contact">Contact</a>
       </nav>
 
-      <a class="nav-cta" href="#contact">Request a Quote <span>↗</span></a>
+      <a class="nav-cta" href="#contact">Contact Rob <span>↗</span></a>
     </header>
 
     <main id="top">
       <section class="hero section">
         <div class="hero-copy">
-          <p class="eyebrow"><span></span> POLITICAL VOICEOVER</p>
+          <p class="eyebrow"><span></span>CONSERVATIVE POLITICAL VOICEOVER</p>
           <h1>A voice of<br /><em>experience.</em></h1>
           <p class="hero-sub">
             Mature. Lived-in. Wise. Authoritative.<br />
@@ -32,7 +31,7 @@ app.innerHTML = `
 
           <div class="hero-actions">
             <a class="button button-dark" href="#demo">Listen to the Demo <span>▶</span></a>
-            <a class="text-link" href="#contact">Request a quote <span>→</span></a>
+            <a class="text-link" href="#contact">Contact Rob <span>→</span></a>
           </div>
 
           <div class="hero-tags" aria-label="Voice qualities">
@@ -207,13 +206,13 @@ app.innerHTML = `
           <p class="eyebrow"><span></span> HAVE A SCRIPT?</p>
           <h2>Let's get your<br /><em>message heard.</em></h2>
           <p class="contact-copy">
-            Send the script, project details and deadline. Rob will respond
+            Send the script, project details and deadline. I will respond
             with availability and a quote.
           </p>
 
           <div class="contact-actions">
             <a class="button button-light" href="mailto:rob@robreidervoice.com?subject=Political%20Voiceover%20Inquiry">
-              Request a Quote <span>↗</span>
+              Contact Rob <span>↗</span>
             </a>
             <a class="contact-email" href="mailto:rob@robreidervoice.com">
               rob@robreidervoice.com
@@ -224,7 +223,7 @@ app.innerHTML = `
     </main>
 
     <footer>
-      <span>© ${new Date().getFullYear()} ROB REIDER</span>
+      <span>© ${new Date().getFullYear()} ROB REIDER VOICE</span>
       <span>POLITICAL VOICEOVER</span>
     </footer>
   </div>
@@ -298,3 +297,24 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
     }
   });
 });
+
+
+// Gentle section reveals — intentionally restrained for a professional political site.
+const revealTargets = document.querySelectorAll(
+  ".statement-inner, .demo-layout, .voice-intro, .qualities, .applications-heading, .application-grid, .studio-intro, .spec-grid, .contact-inner"
+);
+
+revealTargets.forEach((element) => element.classList.add("reveal"));
+
+const revealObserver = new IntersectionObserver(
+  (entries, observer) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add("is-visible");
+      observer.unobserve(entry.target);
+    });
+  },
+  { threshold: 0.12 }
+);
+
+revealTargets.forEach((element) => revealObserver.observe(element));
