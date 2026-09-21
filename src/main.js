@@ -13,7 +13,7 @@ app.innerHTML = `
       <nav class="nav-links" aria-label="Primary navigation">
         <a href="#demo">Demo</a>
         <a href="#voice">The Voice</a>
-        <a href="#applications">Applications</a>
+        <a href="#applications">Applications</a><a href="#studio">Studio</a>
         <a href="#contact">Contact</a>
       </nav>
 
@@ -212,11 +212,11 @@ app.innerHTML = `
           </p>
 
           <div class="contact-actions">
-            <a class="button button-light" href="mailto:YOUR-EMAIL-HERE@example.com?subject=Political%20Voiceover%20Inquiry">
+            <a class="button button-light" href="mailto:rob@robreidervoice.com?subject=Political%20Voiceover%20Inquiry">
               Request a Quote <span>↗</span>
             </a>
-            <a class="contact-email" href="mailto:YOUR-EMAIL-HERE@example.com">
-              YOUR-EMAIL-HERE@example.com
+            <a class="contact-email" href="mailto:rob@robreidervoice.com">
+              rob@robreidervoice.com
             </a>
           </div>
         </div>

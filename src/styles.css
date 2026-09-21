@@ -284,3 +284,32 @@ footer {
   .specs div { grid-template-columns: 95px 1fr; }
   footer { gap: 15px; flex-direction: column; }
 }
+
+
+/* Political campaign visual direction */
+:root{--political-navy:#081329;--political-red:#ef3d35;--political-gold:#e8b94f;--political-cream:#f4f0e7}
+body{background:var(--political-cream)}
+.nav{background:var(--political-navy);color:#fff;border-bottom:4px solid var(--political-red)}
+.brand-mark{border-color:var(--political-gold);color:var(--political-gold)}
+.nav-cta{background:var(--political-red);color:#fff}
+.hero{background:var(--political-cream)}
+.hero h1 span{color:var(--political-red)}
+.button-dark{background:var(--political-red)}
+.hero-tags span{border-color:rgba(8,19,41,.24)}
+.demo-band,.applications,.contact{background:var(--political-navy);color:#fff}
+.audio-card{border-top:7px solid var(--political-red)}
+.wave i.played{background:var(--political-red)}
+.play-button{background:var(--political-red);color:#fff}
+.studio{background:#e8e4da}
+.studio-collage{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:15px}
+.studio-collage img{width:100%;height:280px;object-fit:cover;filter:saturate(.8) contrast(1.05)}
+.studio-lede{max-width:560px;color:#626965;font-size:16px;line-height:1.7}
+.spec-grid{display:grid;grid-template-columns:repeat(3,1fr);margin-top:65px;border-top:3px solid var(--political-navy)}
+.spec{padding:24px 28px 24px 0;border-bottom:1px solid var(--line);min-height:135px}
+.spec:not(:nth-child(3n)){border-right:1px solid var(--line);margin-right:28px}
+.spec span{display:block;color:var(--political-red);font:500 8px var(--mono);letter-spacing:.12em;margin-bottom:15px}
+.spec strong{font-size:14px;line-height:1.65}
+.spec.wide{grid-column:1/-1;border-right:0!important;margin-right:0!important;min-height:auto}
+.contact .button-light{background:var(--political-red);color:#fff}
+@media(max-width:900px){.studio-collage{grid-template-columns:1fr}.spec-grid{grid-template-columns:repeat(2,1fr)}.spec.wide{grid-column:1/-1}}
+@media(max-width:620px){.studio-collage{grid-template-columns:1fr}.studio-collage img{height:240px}.spec-grid{grid-template-columns:1fr}.spec.wide{grid-column:auto}.spec:not(:nth-child(3n)){border-right:0;margin-right:0}}
